@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useState } from "react"
 import { AiOutlineMenu, AiOutlineShoppingCart } from "react-icons/ai"
 import { BsChevronDown } from "react-icons/bs"
 import { useSelector } from "react-redux"
@@ -50,7 +50,7 @@ function Navbar() {
   }
 
   const handleCrossButton = () => { 
-    isClose = isClose ? setIsClose(false) : setIsClose(true);  
+    isClose ? setIsClose(false) : setIsClose(true);  
     // smallScreen = smallScreen ? setSmallScreen(false) : setSmallScreen(true);
   }
   
