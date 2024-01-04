@@ -72,7 +72,4 @@ Live project link here!
 
 API Documentation 📘
 API documentation link here!app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# studyNotion
-# Study_Notion_edtech_platform
-# Study_Notion_edtech_platform
-# StudyNotion
+
