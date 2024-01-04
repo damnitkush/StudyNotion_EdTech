@@ -67,9 +67,4 @@ Love to code? Want to make StudyNotion even cooler? Your contributions are welco
 
 So, let's explore the world of StudyNotion together - where learning meets fun. Happy coding! 🚀
 
-Live Project Link 🌐
-Live project link here!
-
-API Documentation 📘
-API documentation link here!app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
