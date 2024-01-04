@@ -2,14 +2,8 @@ const nodemailer = require("nodemailer")
 
 const mailSender = async (email, title, body) => {
   try {
-
     let transporter = nodemailer.createTransport({
-      service: 'Gmail',
       host: process.env.MAIL_HOST,
-      secure:false,
-      tls:{
-        rejectUnauthorized:false
-      },
       auth: {
         user: process.env.MAIL_USER,
         pass: process.env.MAIL_PASS,
@@ -31,4 +25,4 @@ const mailSender = async (email, title, body) => {
   }
 }
 
-module.exports = mailSender 
+module.exports = mailSender

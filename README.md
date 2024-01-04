@@ -71,3 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # studyNotion
 # Study_Notion_edtech_platform
 # Study_Notion_edtech_platform
+# StudyNotion

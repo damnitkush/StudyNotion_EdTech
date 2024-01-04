@@ -1,18 +1,20 @@
-import React, { useEffect, useState } from "react"
+/* eslint-disable react/jsx-pascal-case */
+import React from "react"
 // Import Swiper React components
-import { Swiper , SwiperSlide } from "swiper/react"
+import { Swiper, SwiperSlide } from "swiper/react"
+
 // Import Swiper styles
 import "swiper/css"
 import "swiper/css/free-mode"
 import "swiper/css/pagination"
 // import "../../.."
 // Import required modules
-import { FreeMode, Pagination, Autoplay } from "swiper/modules"
+import { FreeMode, Pagination } from "swiper"
 
 // import { getAllCourses } from "../../services/operations/courseDetailsAPI"
 import Course_Card from "./Course_Card"
 
-function CourseSlider({ Courses }) {
+function Course_Slider({ Courses }) {
   return (
     <>
       {Courses?.length ? (
@@ -20,11 +22,7 @@ function CourseSlider({ Courses }) {
           slidesPerView={1}
           spaceBetween={25}
           loop={true}
-          modules={[FreeMode, Pagination, Autoplay]}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
+          modules={[FreeMode, Pagination]}
           breakpoints={{
             1024: {
               slidesPerView: 3,
@@ -45,4 +43,4 @@ function CourseSlider({ Courses }) {
   )
 }
 
-export default CourseSlider
+export default Course_Slider

@@ -69,33 +69,6 @@ const Home = () => {
                     
                 </div>
             </div>
-
-            {/* <div className='flex flex-row gap-7 mt-10'>
-                <CTAButton active={true} linkto={"/signup"}> 
-                    Learn More
-                </CTAButton>
-
-                <CTAButton active={false} linkto={"/login"}> 
-                    Book a Demo
-                </CTAButton>
-            </div>
-
-            <div className='mx-3 my-12 shadow-blue-200 relative vid1'>
-                <div > 
-                    <img src = {elipseImage2} width={"100%"}
-                    className='absolute bottom-[1%] -z-10 ' 
-                     alt='elipse ' />
-                     <img src = {elipseImage1} width={"100%"}
-                    className='absolute right-[12%] top-[2%] -z-10'
-                     alt='elipse ' />
-                    
-                </div>
-                <video muted loop autoPlay >
-                    <source  src={Banner} type="video/mp4" />
-                </video> 
-                
-            </div> */}
-
             {/* CODE-SECTION-1 */}
             <div>
                 <CodeBlocks 

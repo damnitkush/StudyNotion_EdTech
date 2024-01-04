@@ -1,60 +1,90 @@
-import React, { useEffect, useState } from "react"
-// Icons
-import { FaRegStar, FaStar } from "react-icons/fa"
-import ReactStars from "react-rating-stars-component"
-import { Link } from "react-router-dom"
+import { useState } from "react"
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai"
+import { useDispatch } from "react-redux"
+import { Link, useNavigate } from "react-router-dom"
 
-import GetAvgRating from "../../../utils/avgRating"
-import RatingStars from "../../common/RatingStars"
+import { login } from "../../../services/operations/authAPI"
 
-function Course_Card({ course, Height }) {
-  // const avgReviewCount = GetAvgRating(course.ratingAndReviews)
-  // console.log(course.ratingAndReviews)
-  const [avgReviewCount, setAvgReviewCount] = useState(0)
-  useEffect(() => {
-    const count = GetAvgRating(course.ratingAndReviews)
-    setAvgReviewCount(count)
-  }, [course])
-  // console.log("count............", avgReviewCount)
+function LoginForm() {
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  })
+
+  const [showPassword, setShowPassword] = useState(false)
+
+  const { email, password } = formData
+
+  const handleOnChange = (e) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      [e.target.name]: e.target.value,
+    }))
+  }
+
+  const handleOnSubmit = (e) => {
+    e.preventDefault()
+    dispatch(login(email, password, navigate))
+  }
 
   return (
-    <>
-      <Link to={`/courses/${course._id}`}>
-        <div className="">
-          <div className="rounded-lg">
-            <img
-              src={course?.thumbnail}
-              alt="course thumnail"
-              className={`${Height} w-full rounded-xl object-cover `}
-            />
-          </div>
-          <div className="flex flex-col gap-2 px-1 py-3">
-            <p className="text-xl text-richblack-5">{course?.courseName}</p>
-            <p className="text-sm text-richblack-50">
-              {course?.instructor?.firstName} {course?.instructor?.lastName}
-            </p>
-            <div className="flex items-center gap-2">
-              <span className="text-yellow-5">{avgReviewCount || 0}</span>
-              {/* <ReactStars
-                count={5}
-                value={avgReviewCount || 0}
-                size={20}
-                edit={false}
-                activeColor="#ffd700"
-                emptyIcon={<FaRegStar />}
-                fullIcon={<FaStar />}
-              /> */}
-              <RatingStars Review_Count={avgReviewCount} />
-              <span className="text-richblack-400">
-                {course?.ratingAndReviews?.length} Ratings
-              </span>
-            </div>
-            <p className="text-xl text-richblack-5">Rs. {course?.price}</p>
-          </div>
-        </div>
-      </Link>
-    </>
+    <form
+      onSubmit={handleOnSubmit}
+      className="mt-6 flex w-full flex-col gap-y-4"
+    >
+      <label className="w-full">
+        <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
+          Email Address <sup className="text-pink-200">*</sup>
+        </p>
+        <input
+          required
+          type="text"
+          name="email"
+          value={email}
+          onChange={handleOnChange}
+          placeholder="Enter email address"
+          className="form-style w-full"
+        />
+      </label>
+      <label className="relative">
+        <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
+          Password <sup className="text-pink-200">*</sup>
+        </p>
+        <input
+          required
+          type={showPassword ? "text" : "password"}
+          name="password"
+          value={password}
+          onChange={handleOnChange}
+          placeholder="Enter Password"
+          className="form-style w-full !pr-10"
+        />
+        <span
+          onClick={() => setShowPassword((prev) => !prev)}
+          className="absolute right-3 top-[38px] z-[10] cursor-pointer"
+        >
+          {showPassword ? (
+            <AiOutlineEyeInvisible fontSize={24} fill="#AFB2BF" />
+          ) : (
+            <AiOutlineEye fontSize={24} fill="#AFB2BF" />
+          )}
+        </span>
+        <Link to="/forgot-password">
+          <p className="mt-1 ml-auto max-w-max text-xs text-blue-100">
+            Forgot Password
+          </p>
+        </Link>
+      </label>
+      <button
+        type="submit"
+        className="mt-6 rounded-[8px] bg-yellow-50 py-[8px] px-[12px] font-medium text-richblack-900"
+      >
+        Sign In
+      </button>
+    </form>
   )
 }
 
-export default Course_Card
+export default LoginForm

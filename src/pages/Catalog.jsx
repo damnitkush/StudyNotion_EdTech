@@ -102,9 +102,7 @@ function Catalog() {
           </p>
         </div>
         <div>
-          <Course_Slider
-            Courses={catalogPageData?.data?.selectedCategory?.courses}
-          />
+          <Course_Slider Courses={catalogPageData?.data?.selectedCategory?.courses}/>
         </div>
       </div>
       {/* Section 2 */}
