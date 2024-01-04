@@ -45,26 +45,6 @@ For this part, I used Node.js, Express.js, MongoDB to store all the info, JWT fo
 Database World 📊
 Our info hangs out in MongoDB, a super-flexible database. It keeps everything organized, from course content to user data.
 
-API Chat 🗣️
-Our APIs (Application Programming Interfaces - just a way for the front and back to talk) follow a style called REST. It's like a language they both understand, making sure they share info smoothly. Check the API Documentation for the full details.
-
 Let's Get Started! 🚀
-Want to play with StudyNotion on your machine? Easy peasy:
-
-Clone the repository: git clone https://github.com/username/repo.git
-Go to the project directory: cd StudyNotion
-Install what's needed: npm install
-Getting Things Ready ⚙️
-Set up a MongoDB database and get the connection URL.
-Create a .env file in the main folder with these inside:
-Let's Roll! 🎉
-Start the server: npm start
-Go to the client folder: cd client
-Start the React server: npm start
-Open your browser: Go to http://localhost:3000.
-You're Part of This! 🤝
-Love to code? Want to make StudyNotion even cooler? Your contributions are welcome!
-
-So, let's explore the world of StudyNotion together - where learning meets fun. Happy coding! 🚀
 
 
