@@ -36,9 +36,13 @@ Back-end Magic 🖥️
 Now, let's talk about the back-end - the brain behind everything. It's like the engine room, making sure everything runs smoothly. I used NodeJS and ExpressJS for this part, and they work together to handle user accounts, courses, payments, and more.
 
 What It Can Do 🚀
+
 User Authentication and Authorization: Sign up, log in, and keep things secure.
+<img width="814" alt="Screenshot 2024-07-22 at 6 13 13 PM" src="https://github.com/user-attachments/assets/7af98d00-fd4e-4dc2-bb08-8ea2cabde53d">
 Course Management: Instructors can create, update, and delete courses, while students can view and rate them.
+<img width="808" alt="Screenshot 2024-07-22 at 6 12 36 PM" src="https://github.com/user-attachments/assets/5aa98fb3-8c76-4542-8485-b9e46971e986">
 Payment Integration: Buy courses securely with Razorpay.
+<img width="931" alt="Screenshot 2024-07-22 at 6 14 16 PM" src="https://github.com/user-attachments/assets/e4ca9502-5d7d-4f1a-9511-6cdb2391494d">
 Cloud-based Media Management: All our images, videos, and documents are stored and managed by Cloudinary.
 Markdown Formatting: Courses are stored in Markdown format for a cool display.
 Login with Google: Users can now log in seamlessly using their Google accounts.
