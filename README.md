@@ -4,7 +4,7 @@ Hey there! Welcome to StudyNotion, a cool project I've been working on to make l
 Quick Intro 🌟
 StudyNotion is my way of making learning interactive and exciting. It's not just for students but also for awesome instructors to share their knowledge with learners around the world. With features like flawless responsiveness across all screen sizes, a meticulously documented backend, progress tracking for enrolled courses, and secure payments through Razorpay, StudyNotion is here to make your learning experience better than ever!
 
-<img width="717" alt="Screenshot 2024-07-22 at 6 10 05 PM" src="https://github.com/user-attachments/assets/1051bd89-5f50-4f81-bf4b-889b2b67491e">
+<img width="full" alt="Screenshot 2024-07-22 at 6 10 05 PM" src="https://github.com/user-attachments/assets/1051bd89-5f50-4f81-bf4b-889b2b67491e">
 
 
 What's Inside? 🧐
@@ -38,11 +38,11 @@ Now, let's talk about the back-end - the brain behind everything. It's like the 
 What It Can Do 🚀
 
 User Authentication and Authorization: Sign up, log in, and keep things secure.
-<img width="814" alt="Screenshot 2024-07-22 at 6 13 13 PM" src="https://github.com/user-attachments/assets/7af98d00-fd4e-4dc2-bb08-8ea2cabde53d">
+<img width="full" alt="Screenshot 2024-07-22 at 6 13 13 PM" src="https://github.com/user-attachments/assets/7af98d00-fd4e-4dc2-bb08-8ea2cabde53d">
 Course Management: Instructors can create, update, and delete courses, while students can view and rate them.
-<img width="808" alt="Screenshot 2024-07-22 at 6 12 36 PM" src="https://github.com/user-attachments/assets/5aa98fb3-8c76-4542-8485-b9e46971e986">
+<img width="full" alt="Screenshot 2024-07-22 at 6 12 36 PM" src="https://github.com/user-attachments/assets/5aa98fb3-8c76-4542-8485-b9e46971e986">
 Payment Integration: Buy courses securely with Razorpay.
-<img width="931" alt="Screenshot 2024-07-22 at 6 14 16 PM" src="https://github.com/user-attachments/assets/e4ca9502-5d7d-4f1a-9511-6cdb2391494d">
+<img width="full" alt="Screenshot 2024-07-22 at 6 14 16 PM" src="https://github.com/user-attachments/assets/e4ca9502-5d7d-4f1a-9511-6cdb2391494d">
 Cloud-based Media Management: All our images, videos, and documents are stored and managed by Cloudinary.
 Markdown Formatting: Courses are stored in Markdown format for a cool display.
 Login with Google: Users can now log in seamlessly using their Google accounts.
