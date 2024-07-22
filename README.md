@@ -4,6 +4,9 @@ Hey there! Welcome to StudyNotion, a cool project I've been working on to make l
 Quick Intro 🌟
 StudyNotion is my way of making learning interactive and exciting. It's not just for students but also for awesome instructors to share their knowledge with learners around the world. With features like flawless responsiveness across all screen sizes, a meticulously documented backend, progress tracking for enrolled courses, and secure payments through Razorpay, StudyNotion is here to make your learning experience better than ever!
 
+<img width="717" alt="Screenshot 2024-07-22 at 6 10 05 PM" src="https://github.com/user-attachments/assets/1051bd89-5f50-4f81-bf4b-889b2b67491e">
+
+
 What's Inside? 🧐
 This README will walk you through everything - from how the system works to setting it up on your machine. So, let's get started!
 
